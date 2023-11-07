@@ -1,0 +1,98 @@
+<div class="container header-container">
+  <nav class="section-one">
+    <ul class="header-nav">
+      <li>
+        <a href="./index.html" class="logo-block">
+          <svg width="24" height="24">
+            <use href="./images/sprite.svg#icon-logotype"></use>
+          </svg>
+          <span class="header-link">Bookshelf</span>
+        </a>
+      </li>
+      <li class="li-header-margin">
+        <a
+          class="header-home header-selected-page isHidden nav-header-link"
+          href="./index.html"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="./shopping.html"
+          class="logo-block hideshopcard js-shop-btn isHidden nav-header-link"
+        >
+          <span class="header-shopping link">Shopping list</span>
+          <svg width="20" height="20" class="svg-cart">
+            <use href="./images/sprite.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="buttons-container">
+    <button
+      type="button"
+      class="themetoggle isHidden"
+      aria-label="change color theme"
+    >
+      <span class="themetoggleswitch"></span>
+    </button>
+
+    <button type="button" class="js-cross-switch" aria-label="mobile menu">
+      <svg width="28" height="28" class="burger-head">
+        <use href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+      <svg width="28" height="28" class="burger-cross header-switch-hidden">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <button
+      type="button"
+      class="head-logged-btn isHidden"
+      id="head-logged-steven"
+    >
+      <span class="user-photo-container"
+        ><svg
+          class="user-photo-icon js-user-icon-header"
+          width="19"
+          height="19"
+        ></svg>
+        <img src="#" alt="user-photo" class="header-user-photo" />
+      </span>
+
+      <span class="head-username"></span>
+
+      <svg width="23" height="26">
+        <use href="./images/sprite.svg#icon-header-arrow"></use>
+      </svg>
+    </button>
+    <button type="button" class="head-signup-btn isHidden" id="head-signup-btn">
+      <span class="head-signup-span">Sign up</span>
+      <svg width="20" height="20" class="signup-arrow-svg">
+        <use href="./images/sprite.svg#icon-arrow-login"></use>
+      </svg>
+    </button>
+    <ul class="header-list-btns isHidden deleted">
+      <li>
+        <label class="add-photo-label-header" for="fileLoadHeader"></label>
+        <!-- <button type="button" class="header-add-photo">Add photo</button> -->
+        <button type="button" class="header-add-photo">Load photo</button>
+        <input
+          id="fileLoadHeader"
+          type="file"
+          accept="image/png, image/gif, image/jpeg"
+          style="display: none"
+        />
+      </li>
+      <li>
+        <button type="button" class="head-loggedup-btn">
+          <span class="head-loggedup-span">Log out</span>
+          <svg width="20" height="20">
+            <use href="./images/sprite.svg#icon-arrow-login"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

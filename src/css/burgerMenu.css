@@ -1,0 +1,245 @@
+@media only screen and (max-width: 767px) {
+  a.btn-home {
+    border-radius: 36px;
+    color: #fff;
+
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .section-burger_item-cart .burger-link-item.current {
+    color: #111111;
+  }
+  .section-burger_shopingList {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #111111;
+  }
+
+  button.section-burger_logOut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    width: 118px;
+    height: 48px;
+    border-radius: 18px;
+    border: 1.5px solid #111;
+    background-color: #fff;
+  }
+  .photo-burger-btn:hover,
+  .photo-burger-btn:focus,
+  button.section-burger_logOut:hover,
+  button.section-burger_logOut:focus {
+    border: 1.5px solid #111;
+    background-color: #4f2ee8;
+    color: #fff;
+  }
+
+  button.section-burger_SingUp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4px;
+
+    width: 184px;
+    height: 48px;
+    border-radius: 18px;
+    border: 1.5px solid #111;
+    background-color: #4f2ee8;
+    color: #fff;
+  }
+
+  button.section-burger_SingUp:hover,
+  button.section-burger_SingUp:focus {
+    border: 1.5px solid #111;
+    background-color: #fff;
+    color: #111;
+  }
+
+  .modal-user {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .modal-shoping {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28;
+  }
+  .shopping-click {
+    display: flex;
+    gap: 4px;
+
+    color: #fff;
+  }
+
+  .svg-cart_white {
+    fill: #fff;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .backdrop-burger {
+    z-index: 5;
+    position: fixed;
+    pointer-events: none;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    overflow: scroll;
+    /* display: none; */
+    visibility: visible;
+    opacity: 1;
+  }
+  .backdrop-burger.is-open {
+    pointer-events: all;
+    top: 66px;
+  }
+}
+
+.modal-burger {
+  transform: translateY(-120%);
+  position: absolute;
+  z-index: 10;
+  opacity: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 120px 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-image: url('../images/burger-imeg/Group7.png'),
+    radial-gradient(
+      189.32% 190.93% at 59.76% -23.42%,
+      #4f2ee8 18.03%,
+      #fff 100%
+    );
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  overflow: hidden;
+  transition: transform 1000ms ease-in-out;
+}
+
+.modal-burger.is-open {
+  transform: translateY(0);
+}
+
+.modal-user_title {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+ul.section-burger_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 16px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-user {
+    display: none;
+  }
+  .backdrop-burger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    max-width: 100%;
+  }
+  .burger-user-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .photo-burger-btn {
+    padding: 8px 12px;
+    color: #111;
+    border: 1px solid #111;
+    border-radius: 36px;
+    background-color: white;
+    margin-left: 2px;
+  }
+  .upload-photo {
+    width: 80px;
+    height: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
+}
+
+.image-btn-burger-container.isHidden {
+  display: none;
+}
+
+.burger-link-item.current .current-link_burger {
+  background-color: #eac645;
+  color: #111111;
+  font-weight: bold;
+  fill: currentColor;
+}
+
+.btn-home,
+.shopping-click {
+  border-radius: 36px;
+  padding: 8px 16px;
+}
+
+.btn-home:focus,
+.shopping-click:focus,
+.btn-home:hover,
+.shopping-click:hover {
+  background-color: #eac645;
+  color: #111111;
+}
+
+.isHidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.burger-link-item.current .svg-cart_white {
+  fill: #111;
+}
+
+.shopping-click:hover .svg-cart_white,
+.shopping-click:focus .svg-cart_white {
+  fill: #111;
+}

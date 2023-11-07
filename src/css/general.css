@@ -1,0 +1,222 @@
+:root {
+  --primary-color-text: #111;
+  --primary-color-text-dark-theme: #fff;
+  --header-background-color: #fff;
+  --header-background-color-dark-theme: #111;
+  --main-background-color: #f6f6f6;
+  --main-background-color-dark-theme: #202024;
+  --primary-stilization-color: #4f2ee8;
+  --secondary-stilization-color: #eac645;
+  --content-count: 1;
+  --color-name-category: #b4afaf;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dm-sans-v14-latin-regular.woff2') format('woff2'),
+    url('../fonts/dm-sans-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dm-sans-v14-latin-500.woff2') format('woff2'),
+    url('../fonts/dm-sans-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dm-sans-v14-latin-700.woff2') format('woff2'),
+    url('../fonts/dm-sans-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dm-sans-v14-latin-italic.woff2') format('woff2'),
+    url('../fonts/dm-sans-italic-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  border: 10px solid #e0e0e0;
+  height: 300px;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  border-color: rgba(234, 198, 69, 0.6);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body.scroll-lock {
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.main-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-shopping-list {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-container {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.categories-fonds-container {
+  display: flex;
+}
+
+@media screen and (min-width: 374px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-container {
+    row-gap: 40px;
+  }
+
+  .categories-fonds-container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .content_image {
+    width: calc((100% / 3)- 4 * 32);
+    height: 316px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .shopping-fond-list-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .main-container {
+    row-gap: 98px;
+  }
+
+  .categories-fonds-container {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+
+  .content_list {
+    display: flex;
+  }
+
+  .content_item {
+    width: calc(100% / 3);
+  }
+
+  .content_book {
+    width: 218px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content_list_topBooks {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .content__image {
+    width: calc((100% / 5) - (6 * 24));
+    height: 256px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .main-container {
+    column-gap: 40px;
+  }
+
+  .categories-fonds-container {
+    flex-direction: column;
+    row-gap: 86px;
+  }
+}

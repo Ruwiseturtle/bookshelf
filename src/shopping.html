@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./public/bookshelf.svg" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Shopping list</title>
+  </head>
+  <body class="shopping-body">
+    <!-- SVG Sprite  -->
+    <include src="./partials/sprite.html"></include>
+
+    <!-- Alexey Melnichenko -->
+    <header class="header">
+      <include src="./partials/header.html"></include>
+
+      <!-- Yuriy Vovk -->
+      <include src="./partials/burgerMenu.html"></include>
+    </header>
+
+    <main>
+      <section class="section-shopping-list">
+        <div class="container">
+          <!-- Alexandr Kalinovskiy -->
+          <div class="shopping-fond-list-wrapper">
+            <include src="./partials/fondsList.html"></include>
+          </div>
+          <!-- Igor Lunyakin -->
+          <include src="./partials/shoppingList.html"></include>
+        </div>
+      </section>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <!-- Elena Peredruy / Dmitriy Shevchenko-->
+    <include src="./partials/modalBook.html"></include>
+
+    <!-- Yuriy Vovk -->
+    <include src="./partials/burgerMenu.html"></include>
+
+    <!-- Maksym Osovik -->
+    <include src="./partials/loginization.html"></include>
+    <!-- Dmytro Shevchenko -->
+    <include src="./partials/scrollUP.html"></include>
+
+    <script type="module" src="./shopping.js"></script>
+  </body>
+</html>

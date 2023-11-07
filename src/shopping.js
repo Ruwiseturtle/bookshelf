@@ -1,0 +1,12 @@
+import './js/sprite';
+import './js/header';
+import './js/fondsList';
+import './js/slick-slider';
+import './js/modalBook';
+import './js/burgerMenu';
+import './js/loginization';
+import './js/addUserPhoto';
+import './js/loginApi';
+import './js/scrollup';
+import './js/shoppingList';
+import './js/footer';
